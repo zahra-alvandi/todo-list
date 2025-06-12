@@ -1,4 +1,4 @@
-.header-section {
+/* .header-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11,6 +11,7 @@
   font-size: 32px;
   color: darkblue;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .todo-form {
@@ -29,7 +30,6 @@
   font-size: 18px;
   color: rgb(88, 151, 171);
   font-family: Arial, Helvetica, sans-serif;
-  /* padding: 10px; */
   text-align: center;
 }
 
@@ -43,4 +43,167 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: none;
+}
+
+.character-section {
+  margin: 10px 20px;
+}
+
+.task-text {
+  flex: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.icon-btn {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.icon-done svg {
+  stroke : green;
+}
+.icon-edit svg {
+  stroke : orange;
+}
+.icon-delete svg {
+  stroke : red;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+  .todo-input {
+    width: 400px;
+  }
+  .todo-input::placeholder {
+    text-align: start;
+    padding: 0px 10px;
+  }
+
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef6ff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #1d4ed8;
+}
+
+form {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+button.add-btn {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #dbeafe;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  flex: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.icon-done svg {
+  stroke: green;
+}
+
+.icon-edit svg {
+  stroke: orange;
+}
+
+.icon-delete svg {
+  stroke: red;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 30px;
+  }
 }
