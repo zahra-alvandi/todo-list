@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* <!-- <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تودولیست با Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-50 font-sans">
+    <div class="min-h-screen flex flex-col md:flex-row items-center justify-center p-4">
+      
+        <div class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+            <img src="your-character.png" alt="کدنویس" class="w-48 md:w-72" />
+        </div>
+
+       
+        <div class="w-full md:w-1/2 bg-white rounded-2xl shadow-xl p-6 max-w-md">
+            <h1 class="text-2xl font-bold text-blue-700 mb-4 text-center">لیست کارها</h1>
+            <form id="todo-form" class="flex gap-2 mb-4">
+                <input id="todo-input" type="text" placeholder="کار جدید..."
+                    class="flex-grow border border-blue-300 rounded-lg p-2 text-right focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                    افزودن
+                </button>
+            </form>
+            <ul id="todo-list" class="space-y-2">
+               
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("todo-form");
+        const input = document.getElementById("todo-input");
+        const list = document.getElementById("todo-list");
+
+        window.onload = () => {
+            const saved = JSON.parse(localStorage.getItem("todos")) || [];
+            saved.forEach((todo) => addTodo(todo.text, todo.done));
+        };
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const value = input.value.trim();
+            if (value !== "") {
+                addTodo(value);
+                input.value = "";
+            }
+        });
+
+        function addTodo(text, done = false) {
+            const li = document.createElement("li");
+            li.className =
+                "flex justify-between items-center bg-blue-100 rounded-lg px-3 py-2";
+            li.innerHTML = `
+          <span class="flex-1 cursor-pointer ${done ? "line-through text-gray-500" : ""
+                }">${text}</span>
+          <button class="text-red-600 hover:text-red-800">🗑</button>
+        `;
+
+            li.querySelector("span").addEventListener("click", () => {
+                li.querySelector("span").classList.toggle("line-through");
+                li.querySelector("span").classList.toggle("text-gray-500");
+                saveTodos();
+            });
+
+            li.querySelector("button").addEventListener("click", () => {
+                li.remove();
+                saveTodos();
+            });
+
+            list.appendChild(li);
+            saveTodos();
+        }
+
+        function saveTodos() {
+            const todos = [];
+            list.querySelectorAll("li").forEach((li) => {
+                todos.push({
+                    text: li.querySelector("span").textContent.trim(),
+                    done: li.querySelector("span").classList.contains("line-through"),
+                });
+            });
+            localStorage.setItem("todos", JSON.stringify(todos));
+        }
+    </script>
+</body>
+
+</html> --> */
